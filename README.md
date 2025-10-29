@@ -2,6 +2,11 @@
 
 **Terminai** is a proof-of-concept for a local-first, privacy-focused CLI tool that translates natural language queries into jq syntax.
 
+```bash
+# Example: Extract names and statuses from Kubernetes pods
+cat pods.json | python main.py "show me the name and status of each pod"
+```
+
 It's built on the philosophy that developers shouldn't have to choose between productivity and privacy. You shouldn't have to paste sensitive production JSON into a third-party API just to build a filter.
 
 This tool runs **100% locally**, using a GBNF-constrained local model (llama-cpp-python) to provide reliable, syntactically-correct jq queries without your data ever leaving your machine.
