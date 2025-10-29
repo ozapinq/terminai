@@ -1,0 +1,6 @@
+internal-docs/
+.aider*
+bin
+.genkit
+test.json
+node_modules
